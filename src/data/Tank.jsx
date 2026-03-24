@@ -1,7 +1,8 @@
 const tanks = [
   {
     id: 'kyuubi',
-    img: 'naruto.png',
+    img: 'tank/naruto.png',
+    modal: 'modaltank/naru.png',
     icon: '🦊',
     name: 'Kyuubi',
     role: 'Cơ động',
@@ -9,7 +10,8 @@ const tanks = [
   },
   {
     id: 'pikachu',
-    img: 'pikachu.png',
+    img: 'tank/pikachu.png',
+    modal: 'modaltank/pikachu.png',
     icon: '⚡',
     name: 'Pikachu',
     role: 'Sát thương điện',
@@ -17,7 +19,8 @@ const tanks = [
   },
   {
     id: 'trieuvan',
-    img: 'tv.png',
+    img: 'tank/tv.png',
+    modal: 'modaltank/trieu_van.jpg',
     icon: '🐉',
     name: 'Triệu Vân',
     role: 'Đâm lướt',
@@ -25,7 +28,8 @@ const tanks = [
   },
   {
     id: 'lubu',
-    img: 'lb.png',
+    img: 'tank/lb.png',
+    modal: 'modaltank/lu_bo.jpg',
     icon: '⚔️',
     name: 'Lữ Bố',
     role: 'Sát thủ',
@@ -33,7 +37,8 @@ const tanks = [
   },
   {
     id: 'ichigo',
-    img: 'ichi.png',
+    img: 'tank/ichi.png',
+    modal: 'modaltank/ichigo.png',
     icon: '🗡️',
     name: 'Ichigo',
     role: 'Bankai',
@@ -41,7 +46,8 @@ const tanks = [
   },
   {
     id: 'thachsanh',
-    img: 'ts.png',
+    img: 'tank/ts.png',
+    modal: 'modaltank/ts.png',
     icon: '🏹',
     name: 'Thạch Sanh',
     role: 'Xạ thủ',
@@ -49,7 +55,8 @@ const tanks = [
   },
   {
     id: 'quancong',
-    img: 'qc.png',
+    img: 'tank/qc.png',
+    modal: 'modaltank/qc.png',
     icon: '🛡️',
     name: 'Quan Công',
     role: 'Đấu sĩ',
@@ -57,7 +64,8 @@ const tanks = [
   },
   {
     id: 'phuonghoang',
-    img: 'phl.png',
+    img: 'tank/phl.png',
+    modal: 'modaltank/phl.png',
     icon: '🔥',
     name: 'Phượng Hoàng',
     role: 'Sát thương diện rộng',

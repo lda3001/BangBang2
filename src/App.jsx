@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect, useRef, useState } from 'react';
 import { setupCanvas } from './canvas/setupCanvas';
 import tanks from './data/Tank';
+import GameSense from './components/gameSense';
 
 function App() {
   const [mode, setMode] = useState('story');
@@ -21,7 +22,7 @@ function App() {
       return undefined;
     }
 
-    const cleanup = setupCanvas(canvasRef.current);
+    const cleanup = setupCanvas(canvasRef.current, selectedTank, mode);
     return cleanup;
   }, [screenState]);
 
@@ -30,7 +31,7 @@ function App() {
       return undefined;
     }
 
-    const loadingDuration = 2200;
+    const loadingDuration = 200;
     let animationFrameId = 0;
     let startTime = null;
 
@@ -58,6 +59,9 @@ function App() {
     };
   }, [screenState]);
 
+  
+
+
   const startGame = () => {
     if (!playerName.trim()) {
       return;
@@ -74,6 +78,10 @@ function App() {
   return (
     <div className="App">
       <canvas id="gameCanvas" ref={canvasRef} className={screenState === 'game' ? 'game-canvas active' : 'game-canvas'} />
+      
+      {screenState === 'game' && <GameSense tankId={selectedTank} />}
+
+    
       {screenState !== 'game' && (
         <div id="lobby-screen" style={{ display: 'flex' }}>
           {screenState === 'loading' ? (
